@@ -104,7 +104,7 @@ systemctl restart docker.service
 version: '3'
 services:
   devops:
-    image: rahamshaik/devopsreponit:latest
+    image: prat1402/movies:latest
     ports:
       - "80:80"
     volumes:
@@ -113,7 +113,7 @@ services:
       replicas: 3
 
   aws:
-    image: rahamshaik/awsreponit:latest
+    image:  prat1402/train:latest
     ports:
       - "81:80"
     volumes:
@@ -122,7 +122,7 @@ services:
       replicas: 3
 
   datascience:
-    image: rahamshaik/datasciencereponit:latest
+    image:  prat1402/recharge:latest
     ports:
       - "82:80"
     volumes:
@@ -131,7 +131,7 @@ services:
       replicas: 3
 
   azure:
-    image: rahamshaik/azurereponit:latest
+    image:  prat1402/dth:latest
     ports:
       - "83:80"
     volumes:
