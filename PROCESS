@@ -66,7 +66,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/devopsbyraham/dockermsproject.git'
+                git 'https://github.com/pratham1402/dockermsproject.git'
             }
         }
         stage('build') {
@@ -81,7 +81,7 @@ pipeline {
         }
         stage('push') {
             steps {
-                sh 'docker login -u rahamshaik -p $password'
+                sh 'docker login -u prat1402 -p $password'
                 sh 'docker push $repo'
             }
         }
